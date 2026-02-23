@@ -1,0 +1,14 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @media (prefers-color-scheme: light) {
+      .bg { fill: #1a1a2e; }
+      .txt { fill: #ffffff; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #ffffff; }
+      .txt { fill: #1a1a2e; }
+    }
+  </style>
+  <rect class="bg" width="180" height="180" rx="37" />
+  <text class="txt" x="90" y="118" font-family="system-ui, sans-serif" font-size="90" font-weight="700" text-anchor="middle">YZ</text>
+</svg>
