@@ -1,8 +1,9 @@
-import { Github, Cloud, Bus, type LucideIcon } from "lucide-react"
+import Image from "next/image"
+import { Github, Cloud, Bus, Bot, type LucideIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { PROJECTS } from "@/data/portfolio"
 
-const iconMap: Record<string, LucideIcon> = { Cloud, Bus }
+const iconMap: Record<string, LucideIcon> = { Cloud, Bus, Bot }
 
 export function ProjectsSection() {
   return (
@@ -20,8 +21,27 @@ export function ProjectsSection() {
           return (
           <div
             key={project.title}
-            className="group flex flex-col rounded-lg border border-border bg-card p-6 transition-shadow hover:shadow-md"
+            className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card transition-shadow hover:shadow-md"
           >
+            {/* Project preview image */}
+            {project.image ? (
+              <div className="relative h-[200px] w-full overflow-hidden bg-muted/50">
+                <Image
+                  src={project.image}
+                  alt={`${project.title} preview`}
+                  width={600}
+                  height={200}
+                  className="h-full w-full rounded-t-lg object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+            ) : (
+              <div className="flex h-[200px] w-full items-center justify-center rounded-t-lg bg-muted/30">
+                <Icon className="h-10 w-10 text-muted-foreground/40" />
+              </div>
+            )}
+
+            <div className="flex flex-1 flex-col p-6">
             <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-md bg-primary/10">
               <Icon className="h-5 w-5 text-primary" />
             </div>
@@ -48,6 +68,7 @@ export function ProjectsSection() {
                   GitHub
                 </a>
               </Button>
+            </div>
             </div>
           </div>
           )

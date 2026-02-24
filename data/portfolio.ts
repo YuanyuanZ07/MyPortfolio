@@ -67,6 +67,7 @@ export const PROJECTS = [
     tags: [".NET", "C#", "REST API"],
     githubUrl: "https://github.com/YuanyuanZ07/Weather",
     iconName: "Cloud" as const,
+    image: "/images/weather.jpg",
   },
   {
     title: "Halifax Transit Android App",
@@ -75,6 +76,16 @@ export const PROJECTS = [
     tags: ["Android", "Mapbox", "API"],
     githubUrl: "https://github.com/YuanyuanZ07/Halifax-Transit-App",
     iconName: "Bus" as const,
+    image: "/images/transit.jpg",
+  },
+  {
+    title: "Arduino Obstacle-Avoidance Robot",
+    description:
+      "Autonomous robot using ultrasonic sensors to detect nearby objects and adjust direction in real-time. Control logic written in C++ with Python serial monitoring for testing sensor readings.",
+    tags: ["Arduino", "C++", "Python", "Sensors"],
+    githubUrl: "https://github.com/YuanyuanZ07",
+    iconName: "Bot" as const,
+    image: "/images/robot.jpg",
   },
 ] as const
 
