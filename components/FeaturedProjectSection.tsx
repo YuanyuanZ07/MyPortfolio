@@ -30,7 +30,7 @@ export function FeaturedProjectSection() {
             <span className="h-3 w-3 rounded-full bg-[#61C554]" />
             <div className="ml-3 flex-1">
               <div className="mx-auto max-w-sm rounded-md bg-background px-3 py-1 text-center text-xs text-muted-foreground">
-                localhost:3000
+                https://halifax-road-report.vercel.app/
               </div>
             </div>
           </div>

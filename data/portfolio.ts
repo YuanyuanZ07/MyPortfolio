@@ -50,7 +50,7 @@ export const FEATURED_PROJECT = {
     alt: "Halifax Road Issue Reporting Platform - Interactive map showing reported road issues",
   },
   githubUrl: "https://github.com/YuanyuanZ07/halifax-roadwatch",
-  previewUrl: "#", // replace when a live demo is available
+  previewUrl: "https://halifax-road-report.vercel.app/", // replace when a live demo is available
   features: [
     "Location-based reporting",
     "Photo upload",
